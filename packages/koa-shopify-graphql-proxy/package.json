@@ -1,6 +1,6 @@
 {
   "name": "@shopify/koa-shopify-graphql-proxy",
-  "version": "7.0.0",
+  "version": "7.0.1",
   "license": "MIT",
   "description": "A wrapper around `koa-better-http-proxy` which allows easy proxying of GraphQL requests from an embedded Shopify app",
   "main": "index.js",
@@ -42,6 +42,7 @@
   "esnext": "index.esnext",
   "exports": {
     ".": {
+      "types": "./build/ts/index.d.ts",
       "esnext": "./index.esnext",
       "import": "./index.mjs",
       "require": "./index.js"

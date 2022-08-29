@@ -1,6 +1,6 @@
 {
   "name": "@shopify/react-testing",
-  "version": "4.1.1",
+  "version": "4.2.0",
   "license": "MIT",
   "description": "A library for testing React components according to our conventions",
   "main": "index.js",
@@ -31,7 +31,7 @@
     "node": "^14.17.0 || >=16.0.0"
   },
   "dependencies": {
-    "@shopify/useful-types": "^5.1.0",
+    "@shopify/useful-types": "^5.1.1",
     "jest-matcher-utils": "^26.6.2",
     "react-reconciler": "^0.28.0"
   },
@@ -54,11 +54,13 @@
   "esnext": "index.esnext",
   "exports": {
     "./matchers": {
+      "types": "./build/ts/matchers/index.d.ts",
       "esnext": "./matchers.esnext",
       "import": "./matchers.mjs",
       "require": "./matchers.js"
     },
     ".": {
+      "types": "./build/ts/index.d.ts",
       "esnext": "./index.esnext",
       "import": "./index.mjs",
       "require": "./index.js"

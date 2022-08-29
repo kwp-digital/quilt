@@ -1,6 +1,6 @@
 {
   "name": "@shopify/react-bugsnag",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "license": "MIT",
   "description": "An opinionated wrapper for Bugsnag's React plugin",
   "main": "index.js",
@@ -42,6 +42,7 @@
   "esnext": "index.esnext",
   "exports": {
     ".": {
+      "types": "./build/ts/index.d.ts",
       "esnext": "./index.esnext",
       "import": "./index.mjs",
       "require": "./index.js"

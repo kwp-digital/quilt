@@ -1,6 +1,6 @@
 {
   "name": "@shopify/react-i18n",
-  "version": "7.2.0",
+  "version": "7.2.1",
   "license": "MIT",
   "description": "i18n utilities for React handling translations, formatting, and more",
   "main": "index.js",
@@ -46,13 +46,13 @@
     "intl-pluralrules": "^0.2.1"
   },
   "dependencies": {
-    "@shopify/dates": "^2.0.0",
-    "@shopify/decorators": "^3.0.0",
-    "@shopify/function-enhancers": "^3.0.0",
-    "@shopify/i18n": "^2.0.0",
-    "@shopify/react-effect": "^5.0.1",
-    "@shopify/react-hooks": "^3.0.1",
-    "@shopify/useful-types": "^5.1.0",
+    "@shopify/dates": "^2.0.1",
+    "@shopify/decorators": "^3.0.1",
+    "@shopify/function-enhancers": "^3.0.1",
+    "@shopify/i18n": "^2.0.1",
+    "@shopify/react-effect": "^5.0.2",
+    "@shopify/react-hooks": "^3.0.2",
+    "@shopify/useful-types": "^5.1.1",
     "@types/hoist-non-react-statics": "^3.0.1",
     "change-case": "^4.1.2",
     "glob": "^7.1.4",
@@ -91,18 +91,24 @@
   "module": "index.mjs",
   "esnext": "index.esnext",
   "exports": {
-    "./babel": "./babel.js",
+    "./babel": {
+      "types": "./build/ts/babel-plugin/index.d.ts",
+      "default": "./babel.js"
+    },
     "./generate-dictionaries": {
+      "types": "./build/ts/babel-plugin/generate-dictionaries.d.ts",
       "esnext": "./generate-dictionaries.esnext",
       "import": "./generate-dictionaries.mjs",
       "require": "./generate-dictionaries.js"
     },
     "./generate-index": {
+      "types": "./build/ts/babel-plugin/generate-index.d.ts",
       "esnext": "./generate-index.esnext",
       "import": "./generate-index.mjs",
       "require": "./generate-index.js"
     },
     ".": {
+      "types": "./build/ts/index.d.ts",
       "esnext": "./index.esnext",
       "import": "./index.mjs",
       "require": "./index.js"

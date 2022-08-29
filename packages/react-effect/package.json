@@ -1,6 +1,6 @@
 {
   "name": "@shopify/react-effect",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "license": "MIT",
   "description": "A component and set of utilities for performing effects within a universal React app",
   "main": "index.js",
@@ -49,11 +49,13 @@
   "esnext": "index.esnext",
   "exports": {
     "./server": {
+      "types": "./build/ts/server.d.ts",
       "esnext": "./server.esnext",
       "import": "./server.mjs",
       "require": "./server.js"
     },
     ".": {
+      "types": "./build/ts/index.d.ts",
       "esnext": "./index.esnext",
       "import": "./index.mjs",
       "require": "./index.js"
