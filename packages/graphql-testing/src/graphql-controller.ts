@@ -2,9 +2,8 @@ import {
   ApolloClient,
   ApolloLink,
   GraphQLRequest,
-  ApolloReducerConfig,
   InMemoryCache,
-  PossibleTypesMap,
+  InMemoryCacheConfig,
 } from '@apollo/client';
 
 import {MockLink, InflightLink} from './links';
@@ -13,8 +12,8 @@ import {operationNameFromFindOptions} from './utilities';
 import {GraphQLMock, MockRequest, FindOptions} from './types';
 
 export interface Options {
-  possibleTypes?: PossibleTypesMap;
-  cacheOptions?: ApolloReducerConfig;
+  possibleTypes?: InMemoryCacheConfig['possibleTypes'];
+  cacheOptions?: InMemoryCacheConfig;
   links?: ApolloLink[];
 }
 
